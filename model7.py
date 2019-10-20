@@ -9,7 +9,7 @@ Created on Sat Oct 19 10:04:57 2019
 import random
 import operator
 import matplotlib.pyplot
-import agentframework6
+import agentframework7
 
 # Calculate the distance between agents
 def distance_between(agents_row_a, agents_row_b):
@@ -34,7 +34,7 @@ num_of_iterations = 100
 
 # Create agents
 for i in range (num_of_agents):
-    agents.append(agentframework6.Agent(environment))
+    agents.append(agentframework7.Agent(environment))
 
 # Move agents
 for j in range (num_of_iterations):
@@ -55,7 +55,7 @@ for i in range (num_of_agents):
 
 matplotlib.pyplot.show()
 
-    
+# Calculate distance of points from all other points    
 for agents_row_a in agents:
     for agents_row_b in agents:
         distance = distance_between(agents_row_a, agents_row_b)
