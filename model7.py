@@ -36,6 +36,7 @@ for i in range (num_of_agents):
 
 # Move agents
 for j in range (num_of_iterations):
+    random.shuffle(agents)
     for i in range(num_of_agents):    
         agents[i].move()
         agents[i].eat()
