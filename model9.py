@@ -12,7 +12,8 @@ import random
 import operator
 import matplotlib.pyplot
 import matplotlib.animation
-import agentframework8
+import agentframework9
+import tkinter
 
 def run():
     animation = matplotlib.animation.FuncAnimation(fig, update, frames=gen_function, repeat=False)
@@ -41,7 +42,7 @@ neighbourhood = 20
 
 # Create agents
 for i in range (num_of_agents):
-    agents.append(agentframework8.Agent(environment, agents))
+    agents.append(agentframework9.Agent(environment, agents))
 
 carry_on = True
 
