@@ -98,8 +98,3 @@ menu_bar.add_cascade(label="Model", menu=model_menu)
 model_menu.add_command(label="Run model", command=run) 
 
 tkinter.mainloop()
-   
-
-
-
-    
